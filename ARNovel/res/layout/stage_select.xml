@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitCenter"
+    tools:context=".StageSelectActivity" >
+ 
+    <!-- ステージセレクト画像 -->
+	<ImageView
+	  android:id="@+id/stage_select"
+	  android:scaleType="fitCenter"	
+	  android:layout_marginTop="30dp"
+	  android:layout_marginLeft="40dp"
+	  android:layout_marginBottom="20dp"
+	  android:layout_width="wrap_content"   
+	  android:layout_height="wrap_content" 
+	  android:src="@drawable/stage_select" >  
+	</ImageView>
+
+	<!--
+	<ImageView
+	  android:id="@+id/stage_top_back"  
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  android:scaleType="fitXY"
+	  android:src="@drawable/stage_top_back" >  
+	</ImageView>
+ 	-->
+	
+	<ListView
+	    android:layout_marginTop="90dp"
+		android:id="@+id/stagelist"
+		android:background="#000000"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:divider="@null">
+	</ListView>
+    
+</RelativeLayout>
